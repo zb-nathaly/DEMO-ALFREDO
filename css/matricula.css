@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Montserrat';
+   text-decoration: none;
+}
+
+body {
+   background: #fff;
+}
+
+/* #region BANNER */
+.div-banner {
+   position: relative;
+   /* cambiar de imagen */
+   background: url(../img/img-inicio/colegio.jpeg) center;
+   background-size: cover;
+   height: 250px;
+   overflow: hidden;
+}
+
+.banner-container {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+   color: #fff;
+   font-weight: 700;
+}
+
+.banner-container h1 {
+   margin: 0;
+   font-size: 35px;
+}
+
+/* #endregion BANNER */
+
+/* #region MATRICULA */
+.matricula {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 0 1.1rem;
+   margin-bottom: 50px;
+}
+
+.matricula .container {
+   margin-top: 50px;
+}
+
+.matricula .blog-post {
+   width: 100%;
+   max-width: 55rem;
+   padding: 1rem;
+   background-color: #dbf4ff21;
+   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+   display: flex;
+   align-items: center;
+   border-radius: .8rem;
+   margin: 10px;
+}
+
+.matricula .blog-post_img {
+   min-width: 25rem;
+   max-width: 25rem;
+   height: 20rem;
+   position: relative;
+   margin-right: 30px;
+}
+
+.matricula .blog-post_img img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: .8rem;
+   display: block;
+}
+
+.matricula .blog-post_img img::before {
+   content: '';
+   width: 80%;
+   height: 80%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   box-shadow: .5rem .5rem 3rem 1px rgba(0, 0, 0, 0.5);
+   border-radius: .8rem;
+}
+
+.matricula .blog-post_date span {
+   display: block;
+   color: #00000080;
+   font-size: 20px;
+   font-weight: 600;
+   margin: .5rem 0;
+}
+
+.matricula .blog-post_title {
+   font-size: 25px;
+   margin: 1.5rem 0 2rem;
+   text-transform: uppercase;
+   color: #97B770;
+}
+
+.matricula .blog-post_text {
+   margin-bottom: 3rem;
+   font-size: 15px;
+   color: #000000b3;
+}
+
+.matricula .blog-post_cta {
+   display: inline-block;
+   padding: 1rem 3rem;
+   font-size: 18px;
+   color: #f5f5f5ff;
+   border-radius: .8rem;
+   background: #97B770;
+}
+
+.matricula .blog-post_cta:hover {
+   background: #4E7228;
+}
+
+@media screen and (max-width: 1068px) {
+   .matricula .blog-post {
+      max-width: 80rem;
+   }
+
+   .matricula .blog-post_img {
+      min-width: 30rem;
+      max-width: 30rem;
+   }
+
+   .matricula .container h2 {
+      margin-top: 120px;
+      margin-left: 275px;
+   }
+}
+
+@media screen and (max-width: 868px) {
+   .matricula .blog-post {
+      max-width: 70rem;
+   }
+
+   .matricula .container h2 {
+      margin-top: 20px;
+      margin-left: 142px;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .matricula {
+      margin-top: 30px;
+   }
+
+   .matricula .blog-post {
+      padding: 2.5rem;
+      flex-direction: column;
+   }
+
+   .matricula .blog-post_img {
+      min-width: 100%;
+      max-width: 100%;
+      transform: translate(0, -1rem);
+   }
+
+   .matricula .container {
+      margin-top: auto;
+   }
+}
+
+@media screen and (max-width: 823px) {
+   .matricula .container h2 {
+      margin-top: 35px;
+      margin-left: 142px;
+   }
+}
+
+/* #endregion MATRICULA */
+
+/* #region REQUISITOS*/
+.requisitos-title {
+   width: 70%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+   margin: 50px auto;
+}
+
+.requisitos-title h1 {
+   font-size: 30px;
+   margin-bottom: 20px;
+   margin-top: 20px;
+   position: relative;
+}
+
+.requisitos-title h1::after {
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 4px;
+   display: block;
+   margin: 0 auto;
+   background-color: #97B770;
+}
+
+.requisitos-title p {
+   font-size: 16px;
+   margin-top: 30px;
+}
+
+.requisitos {
+   margin: 0;
+   padding: 0;
+   font-family: "Montserrat", sans-serif;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.pricing-card {
+   width: 380px;
+   background-color: #f9fafe;
+   box-shadow: 7px 7px 30px rgba(0, 0, 0, 0.1);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   margin: 25px;
+}
+
+.pricing-card .card-header {
+   width: 100%;
+   padding: 30px;
+   background-color: #97B770;
+   font-size: 25px;
+   font-weight: 500;
+   text-transform: capitalize;
+   position: relative;
+}
+
+.pricing-card .card-header::before {
+   content: "";
+   width: 30px;
+   height: 30px;
+   background-color: inherit;
+   position: absolute;
+   bottom: -15px;
+   left: 50%;
+   transform: translateX(-50%) rotate(45deg);
+}
+
+.pricing-card .card-body {
+   width: 100%;
+   padding: 30px 15px 50px;
+}
+
+.pricing-card .card-body .duration {
+   display: block;
+   color: #5c5c5c;
+   font-size: 20px;
+   font-weight: 500;
+   text-transform: capitalize;
+}
+
+.pricing-card .card-body ul {
+   margin-top: 30px;
+   display: flex;
+   flex-direction: column;
+   text-align: left;
+}
+
+.pricing-card .card-body ul li {
+   margin-bottom: 20px;
+   color: #5c5c5c;
+   list-style: none;
+   display: flex;
+   margin-left: 15px;
+   font-size: 14px;
+   font-weight: 500;
+}
+
+.pricing-card .card-body ul li i {
+   width: 15px;
+   margin-right: 10px;
+   color: #97B770;
+}
+
+.pricing-card .card-body .btn:hover {
+   background-color: #97B770;
+}
+
+.pricing-card:nth-child(2) .card-header {
+   background-color: #97B770;
+}
+
+.pricing-card:nth-child(3) .card-header {
+   background-color: #97B770;
+}
+
+@media (max-width: 992px) {
+   .pricing-card {
+      width: 100%;
+   }
+}
+
+/* #endregion REQUISITOS*/

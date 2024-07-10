@@ -1,0 +1,142 @@
+.slider-popup {
+   width: 1200px;
+   max-width: 100vw;
+   height: 700px;
+   margin: auto;
+   overflow: hidden;
+   display: none;
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 1000;
+}
+
+.slider-popup .list-popup {
+   position: relative;
+   width: max-content;
+   height: 100%;
+   left: 0;
+   top: 0;
+   display: flex;
+   transition: 1s;
+}
+
+.slider-popup .list-popup img {
+   width: 1300px;
+   max-width: 100vw;
+   height: 100%;
+   object-fit: cover;
+}
+
+/* Close-button */
+.slider-popup .close-button {
+   position: absolute;
+   top: 3%;
+   left: 8%;
+   width: 90%;
+   display: flex;
+   justify-content: space-between;
+}
+
+.slider-popup .close-button button {
+   display: block;
+   margin: 0 0 20px auto;
+   background: transparent;
+   font-size: 30px;
+   border-radius: 100%;
+   width: 40px;
+   height: 40px;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   background: #4E7228;
+   color: #ffff;
+}
+
+/* Slider-butons */
+.slider-popup .buttons-popup {
+   position: absolute;
+   top: 45%;
+   left: 5%;
+   width: 90%;
+   display: flex;
+   justify-content: space-between;
+}
+
+.slider-popup .buttons-popup button {
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   background-color: #fff5;
+   color: #fff;
+   border: none;
+   font-family: monospace;
+   font-weight: bold;
+   cursor: pointer;
+}
+
+/* Dots-buttons */
+.slider-popup .dots {
+   position: absolute;
+   bottom: 10px;
+   left: 0;
+   color: #fff;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+}
+
+.slider-popup .dots li {
+   list-style: none;
+   width: 10px;
+   height: 10px;
+   background-color: #fff;
+   margin: 10px;
+   border-radius: 20px;
+   transition: 0.5s;
+   cursor: pointer;
+}
+
+.slider-popup .dots li.active {
+   width: 30px;
+}
+
+/* Para pantallas de menos de 768px */
+@media screen and (max-width: 768px) {
+   .popup {
+      width: 100%;
+      height: 100%;
+      margin-top: 10px;
+   }
+
+   .slider-popup {
+      width: 300px;
+      height: 200px;
+   }
+
+   .slider-popup .list-popup img {
+      width: 300px;
+      height: 200px;
+   }
+}
+
+/* Para pantallas de más de 768px */
+@media screen and (min-width: 768px) {
+   .popup {
+      width: 900px;
+      height: 550px;
+   }
+
+   .slider-popup {
+      width: 900px;
+      height: 550px;
+   }
+
+   .slider-popup .list-popup img {
+      width: 900px;
+      height: 550px;
+   }
+}
